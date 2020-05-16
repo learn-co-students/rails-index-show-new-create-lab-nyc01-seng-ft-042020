@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html>
+<%@coupon.each do |coupon|%>
+<p><%= link_to coupon.coupon_code, coupon_path(coupon.id)%>
+<%end%>
+</html>
